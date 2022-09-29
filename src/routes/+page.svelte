@@ -5,7 +5,9 @@
     import Landing from '../components/_Landing.svelte';
 </script>
 
-<div class="container relative flex justify-between  ">
+<div
+    class=" ml-20  md:ml-0 container md:relative flex flex-col justify-evenly items-center md:flex-row md:justify-between  "
+>
     <Socials />
     <Landing {landing} />
 </div>

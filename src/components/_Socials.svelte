@@ -4,7 +4,7 @@
     import linkedin from '$lib/static/linkedin.svg';
 </script>
 
-<div class="socials self-end flex flex-col   gap-6 ml-8  ">
+<div class="socials self-end flex flex-col   gap-6 ml-8 mr-8  ">
     <img width="25px" src={github} alt="" />
     <img src={instagram} alt="" />
     <img src={linkedin} alt="" />

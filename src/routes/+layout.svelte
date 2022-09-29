@@ -8,8 +8,8 @@
     <title>portfolio</title>
 </svelte:head>
 
-<div class="m-20 flex-row">
+<div class="  flex-row m-20">
     <Header />
 
-    <main class="my-10"><slot /></main>
+    <main class=" mt-20"><slot /></main>
 </div>
