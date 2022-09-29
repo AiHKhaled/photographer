@@ -44,7 +44,9 @@
             {/if}
         {/each}
     </div>
-    <div class="md:w-[500px] w-auto md:align-center flex gap-6 flex-col  md:float-right">
+    <div
+        class="md:w-[500px] w-auto md:align-center md:justify-center flex gap-6 flex-col  md:float-right"
+    >
         <h4 class="tracking-widest text-slate-400  md: text-4xl text-right">Services</h4>
 
         <p class="  lg:visible pr-24 text-right">
