@@ -33,22 +33,22 @@
         padding-top: 20px;
     }
     .picture {
-        top: 8%;
-        right: 9%;
+        top: 0%;
+        right: 0%;
+        border: 3px solid rgb(148 163 184);
     }
     .container {
         padding-top: 40px;
-        height: 500px;
-
+        height: 600px;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
     .description {
         display: flex;
         height: 300px;
-        margin-right: 220px;
+        margin-right: 120px;
         border: 3px solid rgb(226 232 240);
     }
 </style>
