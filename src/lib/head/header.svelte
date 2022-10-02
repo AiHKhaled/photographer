@@ -9,7 +9,6 @@
     const links: linkProps[] = [
         { tag: 'Home', href: '/' },
         { tag: 'About', href: '/about' },
-        { tag: 'Testimonials', href: '/testimonials' },
         { tag: 'Contact', href: '/contact' }
     ];
 </script>

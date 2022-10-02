@@ -15,7 +15,10 @@
             iure nobis similique unde quasi? Quis soluta voluptas cumque fugiat obcaecati
         </p>
         <div class="buttons flex flex-row items-center   gap-20 pt-6   ">
-            <button class="rounded-none bg-black px-7 py-3 text-slate-400 ">hire me</button>
+            <button
+                class="rounded-none bg-gradient-to-r from-black to-slate-700 hover:from-slate-800 hover:to-black px-7 py-3 text-slate-400 "
+                >hire me</button
+            >
             <button> View Portfolio</button>
         </div>
     </div>

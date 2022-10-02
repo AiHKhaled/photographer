@@ -7,72 +7,64 @@
     import work6 from '$lib/static/works/work6.jpg';
 </script>
 
-<div class="text-right">
-    <h2 class="text-slate-400">testemonials</h2>
-    <h1 class="text-2xl font-bold tracking-widest">Happy Clients Say</h1>
-</div>
-
-<div class="flex items-center  ">
-    <div id="big">
-        <div id="big_diamond">
-            <div class="diamond">
-                <img src={work1} alt="" />
-            </div>
-            <div class="diamond">
-                <img src={work3} alt="" />
-            </div>
-        </div>
-        <div id="big_diamond">
-            <div class="diamond">
-                <img src={work4} alt="" />
-            </div>
-            <div class="diamond">
-                <img src={work5} alt="" />
-            </div>
-        </div>
+<div class="mt-10">
+    <div class="md:text-right">
+        <h2 class="text-slate-400">testemonials</h2>
+        <h1 class="text-2xl font-bold tracking-widest">Happy Clients Say</h1>
     </div>
-    <div class="border-[3px] border-slate-300 ml-[8px] w-[800px] h-[300px]">
-        <div class="pl-28 pt-10 flex flex-col justify-between gap-5">
-            <span>
-                <h2 class=" text-xl font-bold">jhon doe</h2>
-                <h3 class="text-slate-400">client</h3>
-            </span>
-            <p class="text-slate-400 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis fugit
-                harum quisquam impedit saepe voluptatem accusamus nesciunt, similique quasi,
-                mollitia quod rem eligendi dignissimos explicabo? Voluptate nihil voluptas aliquid.
-            </p>
+
+    <div class="flex justify-center   items-end  ">
+        <div
+            id="big"
+            class=" invisible md:visible my-[80px] md:left-12  rotate-45 left-8 relative float-left"
+        >
+            <div id="big_diamond" class="flex items-center flex-wrap">
+                <div
+                    class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+                >
+                    <img class="-rotate-45 scale-150" src={work1} alt="" />
+                </div>
+                <div
+                    class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+                >
+                    <img class="-rotate-45 scale-150" src={work3} alt="" />
+                </div>
+            </div>
+            <div id="big_diamond" class="flex items-center flex-nowrap">
+                <div
+                    class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+                >
+                    <img class="-rotate-45 scale-150" src={work4} alt="" />
+                </div>
+                <div
+                    class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+                >
+                    <img class="-rotate-45 scale-150" src={work5} alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="border-[3px]  self-center border-slate-300 ml-[8px] md:w-[800px] md:h-[300px]">
+            <div class="md:pl-28 p-5 md:pt-10 flex flex-col justify-between gap-5">
+                <span>
+                    <h2 class=" text-xl font-bold">jhon doe</h2>
+                    <h3 class="text-slate-400">client</h3>
+                </span>
+                <p class="text-slate-400 ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis
+                    fugit harum quisquam impedit saepe voluptatem accusamus nesciunt, similique
+                    quasi, mollitia quod rem eligendi dignissimos explicabo? Voluptate nihil
+                    voluptas aliquid.
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
-    #big {
-        margin-top: 80px;
-        transform: rotate(45deg);
-        left: 6.4%;
-        margin-bottom: 120px;
-        position: relative;
-        float: left;
-    }
-    #big_diamond {
-        display: flex;
-        align-items: center;
-        flex-wrap: no-wrap;
-    }
-    .diamond {
-        width: 150px;
-        max-height: 150px;
-        margin: 20px;
-        border: 3px solid rgb(203 213 225);
-        position: relative;
-        overflow: hidden;
-    }
     #big_diamond img {
         position: sticky;
         z-index: -1;
         width: auto;
         height: auto;
-        transform: rotate(-45deg) scale(1.6);
     }
 </style>

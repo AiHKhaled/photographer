@@ -2,53 +2,29 @@
     export let about: string;
 </script>
 
-<div class=" container relative ">
-    <div class="picture absolute   ">
-        <img class=" w-[220px] h-[280px]" src={about} alt="" />
+<div
+    class="  pt-[40px] h-auto md:w-auto  md:h-[600px] flex   md:flex-row-reverse md:justify-around  items-center  relative gap-5 "
+>
+    <div
+        class=" md:absolute  md:top-0 md:right-0 border-[3px] border-slate-400       
+    "
+    >
+        <img class=" w-[700px] h-[300px] md:w-[220px] md:h-[280px]  " src={about} alt="selfie" />
     </div>
-    <div class=" block description ">
-        <div class="para">
+    <div class=" flex   md:h-[300px]  md:mr-[120px] border-2 border-slate-300 ">
+        <div
+            class=" flex flex-col  items-start gap-4  md:pr-[110px]   mt-10 px-[20px] md:pt-[20px]"
+        >
             <h3 class="text-slate-400">Hello</h3>
             <h1 class="text-2xl font-bold tracking-widest">I'm IBRAHIM</h1>
             <p class="text-slate-400">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat debitis magnam sit,
-                distinctio quasi doloremque. Laboriosam voluptas saepe id eos vitae. Repellendus
-                quibusdam temporibus veritatis debitis explicabo vitae sequi aliquid asperiores fuga
-                illo, exercitationem eligendi eveniet? Est quisquam ut iusto?
+                distinctio quasi doloremque. Laboriosam voluptas saepe id eos vitae.
             </p>
-            <button class="mt-5 "> Read More </button>
+            <button class="my-5  "> Read More </button>
         </div>
     </div>
 </div>
 
 <style>
-    .para {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        text-align: left;
-        padding-right: 110px;
-        padding-left: 20px;
-        padding-top: 20px;
-    }
-    .picture {
-        top: 0%;
-        right: 0%;
-        border: 3px solid rgb(148 163 184);
-    }
-    .container {
-        padding-top: 40px;
-        height: 600px;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .description {
-        display: flex;
-        height: 300px;
-        margin-right: 120px;
-        border: 3px solid rgb(226 232 240);
-    }
 </style>

@@ -5,8 +5,10 @@
     import Testimonials from '../../components/About/_Testimonials.svelte';
 </script>
 
-<div class="mx-[250px] ">
+<div class="md:mx-[250px]   md:w-auto flex flex-col justify-start items-end md:items-center  ">
     <Intro {about} />
     <Works />
-    <Testimonials />
+    <div class="md:mt-8  md:w-[1045px]">
+        <Testimonials />
+    </div>
 </div>

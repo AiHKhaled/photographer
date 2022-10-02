@@ -17,7 +17,7 @@
     let current = 6;
 </script>
 
-<div class="">
+<div class="pt-24">
     <div class="">
         <h2 class="text-slate-400">portfolio</h2>
         <h1 class="text-2xl font-bold tracking-widest">My Latest Work</h1>
