@@ -1,0 +1,73 @@
+<script lang="ts" context="module">
+    export function showFunction(idImage: string): void {
+        var x = document.getElementById('hidden');
+        let diamond = document.getElementById(idImage);
+
+        if (diamond!.id == idImage) {
+            console.log(opinions[Number(idImage) - 1].opinion);
+            x!.innerHTML = `
+            <span>
+                    <h2 class=" text-xl font-bold"> ${opinions[Number(idImage) - 1].name} </h2>
+                    <h3 class="text-slate-400">client</h3>
+                </span>
+                <p class="text-slate-400 ">
+                    ${opinions[Number(idImage) - 1].opinion}
+                </p>`;
+
+            x!.style.display = 'flex';
+        } else {
+            // @ts-ignore
+
+            x.style.display = 'none';
+        }
+    }
+</script>
+
+<script lang="ts">
+    import { opinions, type opinionProps } from './data';
+
+    export let secondImage: string, firstImage: string, thirdImage: string, fourthImage: string;
+</script>
+
+<div id="big_diamond" class="flex ">
+    <div
+        id="1"
+        on:click={() => showFunction('1')}
+        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+    >
+        <img class="-rotate-45 scale-150" src={firstImage} alt="" />
+    </div>
+    <div
+        id="2"
+        on:click={() => showFunction('2')}
+        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+    >
+        <img class="-rotate-45 scale-150" src={secondImage} alt="" />
+    </div>
+</div>
+
+<div id="big_diamond" class="flex ">
+    <div
+        id="3"
+        on:click={() => showFunction('3')}
+        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+    >
+        <img class="-rotate-45 scale-150" src={thirdImage} alt="" />
+    </div>
+    <div
+        id="4"
+        on:click={() => showFunction('4')}
+        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+    >
+        <img class="-rotate-45 scale-150" src={fourthImage} alt="" />
+    </div>
+</div>
+
+<style>
+    #big_diamond img {
+        position: sticky;
+        z-index: -1;
+        width: auto;
+        height: auto;
+    }
+</style>
