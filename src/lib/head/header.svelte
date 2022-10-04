@@ -21,6 +21,7 @@
         <ul class="flex justify-end items-center gap-10 mr-4 list-none font-semibold">
             {#each links as link}
                 <a
+                    data-sveltekit-noscroll
                     class:active={$page.url.pathname === link.href}
                     class="text-slate-400 hover:text-black "
                     data-sveltekit-prefetch

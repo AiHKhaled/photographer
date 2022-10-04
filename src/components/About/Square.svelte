@@ -1,10 +1,13 @@
 <script lang="ts" context="module">
+    type functionProps = {
+        idImage: string;
+        [key: string]: any;
+    };
     export function showFunction(idImage: string): void {
         var x = document.getElementById('hidden');
         let diamond = document.getElementById(idImage);
 
         if (diamond!.id == idImage) {
-            console.log(opinions[Number(idImage) - 1].opinion);
             x!.innerHTML = `
             <span>
                     <h2 class=" text-xl font-bold"> ${opinions[Number(idImage) - 1].name} </h2>
@@ -15,16 +18,12 @@
                 </p>`;
 
             x!.style.display = 'flex';
-        } else {
-            // @ts-ignore
-
-            x.style.display = 'none';
         }
     }
 </script>
 
 <script lang="ts">
-    import { opinions, type opinionProps } from './data';
+    import { opinions } from './data';
 
     export let secondImage: string, firstImage: string, thirdImage: string, fourthImage: string;
 </script>

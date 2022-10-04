@@ -1,15 +1,8 @@
-<script context="module">
-    import { opinionProps } from '../About/data';
-</script>
-
 <script lang="ts">
     import work1 from '$lib/static/works/work1.jpg';
-    import work2 from '$lib/static/works/work2.jpg';
     import work3 from '$lib/static/works/work3.jpg';
     import work4 from '$lib/static/works/work4.jpg';
     import work5 from '$lib/static/works/work5.jpg';
-    import work6 from '$lib/static/works/work6.jpg';
-    import { opinions } from './data';
     import Square, { showFunction } from './Square.svelte';
 </script>
 
@@ -35,15 +28,10 @@
         <div class="border-[3px]  self-center border-slate-300 ml-[8px] md:w-[800px] md:h-[300px]">
             <div id="hidden" class="md:pl-28 p-5 md:pt-10 flex flex-col justify-between gap-5  ">
                 <span>
-                    <h2 class=" text-xl font-bold">jhon doe</h2>
+                    <h2 class=" text-xl font-bold">lorem</h2>
                     <h3 class="text-slate-400">client</h3>
                 </span>
-                <p class="text-slate-400 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officiis
-                    fugit harum quisquam impedit saepe voluptatem accusamus nesciunt, similique
-                    quasi, mollitia quod rem eligendi dignissimos explicabo? Voluptate nihil
-                    voluptas aliquid.
-                </p>
+                <p class="text-slate-400 ">Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
     </div>
