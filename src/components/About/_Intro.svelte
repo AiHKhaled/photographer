@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { fade, fly } from 'svelte/transition';
+
     export let about: string;
 </script>
 
@@ -9,7 +11,13 @@
         class=" md:absolute  md:top-0 md:right-0 border-[3px] border-slate-400       
     "
     >
-        <img class=" w-[700px] h-[300px] md:w-[220px] md:h-[280px]  " src={about} alt="selfie" />
+        <img
+            in:fly={{ duration: 500, delay: 900 }}
+            out:fade
+            class=" w-[700px] h-[300px] md:w-[220px] md:h-[280px]  "
+            src={about}
+            alt="selfie"
+        />
     </div>
     <div class=" flex   md:h-[300px]  md:mr-[120px] border-2 border-slate-300 ">
         <div

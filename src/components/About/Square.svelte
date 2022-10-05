@@ -32,14 +32,14 @@
     <div
         id="1"
         on:click={() => showFunction('1')}
-        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+        class="diamond w-[100px] max-h-[100px] m-5 cursor-pointer brightness-[60%] hover:scale-[1.2] ease-in-out duration-300 hover:brightness-100 border-2 border-slate-400 relative overflow-hidden"
     >
         <img class="-rotate-45 scale-150" src={firstImage} alt="" />
     </div>
     <div
         id="2"
         on:click={() => showFunction('2')}
-        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+        class="diamond w-[100px] max-h-[100px] m-5 cursor-pointer brightness-[60%] hover:brightness-100 hover:scale-[1.2] ease-in-out duration-300 border-2 border-slate-400 relative overflow-hidden"
     >
         <img class="-rotate-45 scale-150" src={secondImage} alt="" />
     </div>
@@ -49,14 +49,14 @@
     <div
         id="3"
         on:click={() => showFunction('3')}
-        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+        class="diamond w-[100px] max-h-[100px] m-5  cursor-pointer brightness-[60%] hover:brightness-100 hover:scale-[1.2] ease-in-out duration-300 border-2 border-slate-400 relative overflow-hidden"
     >
         <img class="-rotate-45 scale-150" src={thirdImage} alt="" />
     </div>
     <div
         id="4"
         on:click={() => showFunction('4')}
-        class="diamond w-[100px] max-h-[100px] m-5 border-2 border-slate-400 relative overflow-hidden"
+        class="diamond w-[100px] max-h-[100px] m-5 border-2 cursor-pointer brightness-[60%] hover:brightness-100 hover:scale-[1.2] ease-in-out duration-300 border-slate-400 relative overflow-hidden"
     >
         <img class="-rotate-45 scale-150" src={fourthImage} alt="" />
     </div>
